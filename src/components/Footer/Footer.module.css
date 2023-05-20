@@ -1,0 +1,10 @@
+footer {
+  display: flex;
+  justify-content: space-between;
+  margin: 3rem 0 2rem 0 ;
+}
+
+footer p {
+  font-size: var(--pie);
+  color: orange;
+}

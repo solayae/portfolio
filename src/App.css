@@ -1,0 +1,8 @@
+#root {
+  display: flex;
+  flex-direction: column;
+  max-width: 44rem;
+  height: 100%;
+  margin: 4rem auto 0 auto;
+
+}

@@ -1,0 +1,60 @@
+.contactContainer {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+
+.contactContainer button {
+  position: relative;
+  background: linear-gradient(to right, 
+ hsl(240deg 100% 20%) 0%,
+  hsl(339deg 100% 42%) 46%,
+  hsl(355deg 100% 50%) 84%,
+  hsl(349deg 100% 50%) 100%);
+  padding: 0.7rem;
+  background-color: transparent;
+  border: solid 0.1rem gray;
+  border-radius: 0.3rem;
+  overflow: hidden;
+}
+
+.contactContainer button a {
+  color: black;
+  text-decoration: none;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: var(--cuerpo);
+  position: relative;
+  z-index: 10;
+  transition: color 0.4s;
+  display: inline-flex;
+  align-items: center;
+}
+
+.contactContainer button a:hover {
+  color: white;
+}
+
+.contactContainer button::before,
+.contactContainer button::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.contactContainer button::before {
+  content: "";
+  background: hsl(0, 0%, 98%);
+  ;
+  width: 120%;
+  left: -10%;
+  transform: skew(30deg);
+  transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
+}
+
+.contactContainer button:hover::before {
+  transform: translate3d(100%, 0, 0);
+}
