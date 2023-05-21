@@ -23,8 +23,7 @@ p {
 
 :root {
   
-  /* font-family: 'Roboto Mono', monospace; */
-  font-family: 'Courier New', Courier, monospace;
+  font-family: 'Courier New', 'Roboto Mono', monospace;
   --titulos: 1.5rem; 
   --subtitulos: 1.25rem; 
   --cuerpo: 0.875rem; 
