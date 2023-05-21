@@ -6,10 +6,6 @@ h3 {
   text-align: start;
 }
 
-p:first-of-type {
-  /* margin-bottom: 1rem; */
-}
-
 .projectsContainer {
   margin: 1rem 0 1rem 0;
   display: grid;
@@ -21,12 +17,10 @@ p:first-of-type {
   border: solid 1px #d6d6d6;
   border-radius: 0.5rem;
   padding: 0 1rem;
-  margin: 0 1rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* height: 28rem; */
 
 }
 
@@ -65,6 +59,7 @@ p:first-of-type {
   display: flex;
   flex-direction: unset;
   gap: 0.1rem;
+  margin-bottom: 0.5rem;
 }
 
 .projectsLinks button {

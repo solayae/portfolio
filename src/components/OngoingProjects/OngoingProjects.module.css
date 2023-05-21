@@ -1,10 +1,13 @@
 .projectsContainer {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+
 }
 
 .projectCard {
-  border: solid 1px gray;
+  border: solid 1px #d6d6d6;
+  border-radius: 0.5rem;
   padding: 1rem 1rem 0 1rem;
  
   display: flex;
