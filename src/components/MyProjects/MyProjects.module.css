@@ -14,17 +14,19 @@ p:first-of-type {
   margin: 1rem 0 1rem 0;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  gap: 1rem;
 }
 
 .projectCard {
   border: solid 1px #d6d6d6;
   border-radius: 0.5rem;
-  padding: 0 1rem 0 1rem;
+  padding: 0 1rem;
+  margin: 0 1rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 28rem;
+  /* height: 28rem; */
 
 }
 
@@ -53,10 +55,10 @@ p:first-of-type {
 }
 
 .technologies span {
-border: solid 1px gray;
-border-radius: 0.3rem;
-padding: 0.1rem 0.3rem 0.1rem 0.3rem;
-font-size: 12px;
+  border: solid 1px gray;
+  border-radius: 0.3rem;
+  padding: 0.1rem 0.3rem 0.1rem 0.3rem;
+  font-size: 12px;
 }
 
 .projectsLinks {
@@ -65,7 +67,7 @@ font-size: 12px;
   gap: 0.1rem;
 }
 
-.projectsLinks button{
+.projectsLinks button {
   background-color: transparent;
   border: none;
   border-radius: 50%;
@@ -75,4 +77,24 @@ font-size: 12px;
 
 .projectsLinks button svg:hover {
   color: gray;
+}
+
+@media screen and (max-width: 425px) {
+  h2 {
+    text-align: center;
+  }
+
+  p {
+    text-align: center;
+  }
+
+  .projectsContainer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .projectCard {
+    margin: 0 1rem;
+
+  }
 }

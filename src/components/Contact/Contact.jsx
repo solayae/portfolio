@@ -4,7 +4,7 @@ import styles from './Contact.module.css';
 
 function Contact(props) {
   return (
-    <section id='contact'>
+    <section id='contact' className={styles.contact}>
       <h2>Contacto</h2>
       <p>Puedes contactarme por correo electrónico y de esta forma podemos conversar y discutir tus ideas o proyectos en curso. Estoy abierto a colaboraciones y oportunidades emocionantes. ¡No dudes en escribirme!</p>
       <div className={styles.contactContainer}>

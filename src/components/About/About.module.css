@@ -100,3 +100,52 @@
 .buttons button:hover::before {
   transform: translate3d(100%, 0, 0);
 }
+
+@media screen and (max-width: 425px) {
+  .aboutMain {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .title {
+    text-align: center;
+  }
+
+  .aboutContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 100vw;
+    padding: 9rem 0.9rem 1rem;
+    position: relative;
+
+  }
+
+  .about {
+    display: flex;
+    align-items: center;
+  }
+
+  .about p{
+    text-align: center;
+  }
+
+  .buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .buttons button{
+    /* width: 3rem; */
+  }
+
+  .picture {
+    position: absolute;
+    top: 0;
+  }
+}

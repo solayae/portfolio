@@ -46,3 +46,27 @@ ul li:hover {
   background-color: transparent;
   border: none;
 }
+
+@media (max-width: 425px) {
+
+  .header {
+    width: 100vw;
+  }
+  .buttonContainer {
+    display: flex;
+    width: 100%;
+    justify-content: end;
+    align-items: center;
+  }
+
+  .button {
+    width: auto;
+    margin-right: 1rem;
+  }
+  .button svg {
+    width: 3rem;
+  }
+  .header nav{
+    display: none;
+  }
+}

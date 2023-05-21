@@ -5,7 +5,7 @@ import { GitHub } from 'iconoir-react';
 
 export default function About() {
   return (
-    <div id='about'>
+    <div id='about' className={styles.aboutMain}>
       <h1 className={styles.title}>Sebastián Olaya Escobar</h1>
       <section className={styles.aboutContainer}>
         <div className={styles.about}>

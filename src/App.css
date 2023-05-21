@@ -4,5 +4,13 @@
   max-width: 44rem;
   height: 100%;
   margin: 4rem auto 0 auto;
+}
 
+@media screen and (max-width: 425px) {
+
+  
+ #root {
+  margin: 0;
+  width: 100vw;
+ }
 }

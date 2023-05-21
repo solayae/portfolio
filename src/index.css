@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  /* border: dotted 1px gray; */
 }
 body {
   background-color: hsl(0, 0%, 98%);;
@@ -58,3 +59,9 @@ p {
     background-color: #f9f9f9;
   }
 } */
+
+@media screen and (max-width: 425px) {
+  body {
+    width: 100vw;
+  }
+}

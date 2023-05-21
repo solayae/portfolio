@@ -1,6 +1,7 @@
 .skillsContainer {
   display: flex;
   max-width: 100%;
+  margin: 0 0.5rem;
 
 }
 .skillsCards {
@@ -8,6 +9,7 @@
   gap: 1rem;
   flex-wrap: wrap;
   gap: 0.6rem;
+
 }
 
 .skill {
@@ -24,3 +26,10 @@
   width: 1.3rem;
 }
 
+
+@media screen and (max-width: 425px) {
+  .skillsCards {
+  justify-content: center;
+
+  }
+}
