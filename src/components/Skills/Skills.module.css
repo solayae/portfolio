@@ -22,6 +22,10 @@
   gap: 0.3rem;
 }
 
+.skill p {
+  height: 1rem;
+}
+
 .skillsCards div img {
   width: 1.3rem;
 }
