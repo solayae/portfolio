@@ -4,13 +4,11 @@
 * {
   margin: 0;
   padding: 0;
-  /* border: dotted 1px gray; */
-  font-family: var(--primaryFont);
+  font-family: var(--fuentes-monospace);
 }
 
 body {
   background-color: hsl(0, 0%, 98%);
-  ;
 
 }
 
@@ -30,27 +28,15 @@ p {
 :root {
 
   --primaryFont: 'Courier New', Courier, monospace;
-  /* font-family: 'Roboto Mono', monospace;
-  font-family: 'Courier New', Courier, monospace;
-  font-family: 'Fira Mono', monospace; */
+  --fuentes-monospace: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
   --titulos: 1.5rem;
   --subtitulos: 1.25rem;
   --cuerpo: 0.875rem;
   --pie: 0.75rem;
-  /* line-height: 1.5; */
-
-
-  /* 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%; */
-
+  
+    /* font-family: 'Roboto Mono', monospace;
+    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Fira Mono', monospace; */
 }
 
 /* @media (prefers-color-scheme: light) {
