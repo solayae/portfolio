@@ -22,7 +22,6 @@
 .contactContainer button a {
   color: black;
   text-decoration: none;
-  font-family: 'Courier New', Courier, monospace;
   font-size: var(--cuerpo);
   position: relative;
   z-index: 10;

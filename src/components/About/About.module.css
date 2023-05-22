@@ -37,7 +37,6 @@
 .buttons button span {
   display: flex;
   align-items: center;
-  font-family: 'Courier New', Courier, monospace;
   padding: 0.5rem 0.7rem 0.5rem 0.7rem;
   gap: 0.5rem;
 }
@@ -45,7 +44,6 @@
 .buttons button {
   cursor: pointer;
   position: relative;
-  font-family: inherit;
   border-radius: 0.3rem;
   border: 0.1rem solid gray;
   background-color: transparent;
