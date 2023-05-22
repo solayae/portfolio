@@ -5,9 +5,9 @@ import { GitHub, PageRight } from 'iconoir-react';
 
 function MyProjects(props) {
   return (
-    <div id='projects'>
+    <div id='projects' className={styles.projects}>
         <h2>Proyectos</h2>
-        <p>Aquí algunos de mis proyectos en los que he trabajado</p>
+        <p className={styles.projectsFirstP}>Aquí algunos de mis proyectos en los que he trabajado</p>
         <div className={styles.projectsContainer}>
           <div className={styles.projectCard}>
             <figure className={styles.figureCard}>

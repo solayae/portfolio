@@ -15,7 +15,7 @@
 
 .about p {
   width: 95%;
- 
+
 }
 
 .picture {
@@ -73,7 +73,7 @@
   padding: 0.8em 1.2em 0.8em 1.05em;
 }
 
-.buttons button span:hover{
+.buttons button span:hover {
   color: white;
 }
 
@@ -89,7 +89,8 @@
 
 .buttons button::before {
   content: "";
-  background: hsl(0, 0%, 98%);;
+  background: hsl(0, 0%, 98%);
+  ;
   width: 120%;
   left: -10%;
   transform: skew(30deg);
@@ -110,6 +111,7 @@
   }
 
   .title {
+    margin: 0 1rem 2rem;
     text-align: center;
   }
 
@@ -129,7 +131,7 @@
     align-items: center;
   }
 
-  .about p{
+  .about p {
     text-align: center;
   }
 
@@ -139,7 +141,7 @@
     flex-wrap: wrap;
   }
 
-  .buttons button{
+  .buttons button {
     /* width: 3rem; */
   }
 

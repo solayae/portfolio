@@ -31,6 +31,8 @@ h3 {
 }
 
 
+
+
 .figureCard {
   width: 100%;
 }
@@ -79,8 +81,8 @@ h3 {
     text-align: center;
   }
 
-  p {
-    text-align: center;
+  .projectsFirstP {
+    margin: 0 1rem;
   }
 
   .projectsContainer {
