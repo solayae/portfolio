@@ -28,7 +28,8 @@ p {
 :root {
 
   --primaryFont: 'Courier New', Courier, monospace;
-  --fuentes-monospace: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
+  --fuentes-monospace: 'Courier New', 'Fira Mono', Courier, monospace;
+  /* --fuentes-monospace: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Fira Mono', 'Courier New', monospace; */
   --titulos: 1.5rem;
   --subtitulos: 1.25rem;
   --cuerpo: 0.875rem;
