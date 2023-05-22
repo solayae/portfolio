@@ -27,14 +27,14 @@ p {
 
 :root {
 
-  --fuentes-monospace: Courier, 'Fira Mono' ;
+  --fuentes-monospace: Courier, 'Courier New','Liberation Mono', 'Fira Mono', sans;
   /* --fuentes-monospace: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Fira Mono', 'Courier New', monospace; */
   --titulos: 1.5rem;
   --subtitulos: 1.25rem;
   --cuerpo: 0.875rem;
   --pie: 0.75rem;
-  
-    /* font-family: 'Roboto Mono', monospace;
+
+  /* font-family: 'Roboto Mono', monospace;
     font-family: 'Courier New', Courier, monospace;
     font-family: 'Fira Mono', monospace; */
 }
