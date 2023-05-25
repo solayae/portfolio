@@ -2,9 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=B612+Mono:ital@1&family=JetBrains+Mono&family=Oxygen+Mono&family=Ubuntu+Mono&display=swap');
-
-
-  @import url('https://fonts.googleapis.com/css2?family=B612+Mono&family=JetBrains+Mono&family=Oxygen+Mono&family=Ubuntu+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=B612+Mono&family=JetBrains+Mono&family=Oxygen+Mono&family=Ubuntu+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap');
 
 * {
   margin: 0;
@@ -12,8 +12,10 @@
   /* font-family: var(--desktop-fonts); */
   font-family: 'Roboto Mono';
   font-family: 'Fira Mono';
-  font-family: 'Courier New', Courier, monospace;
+  font-family: 'IBM Plex Sans', sans-serif;
   font-family: 'Oxygen Mono', monospace;
+  font-family: 'Courier New', Courier, monospace;
+  font-family: 'JetBrains Mono', monospace;
 }
 
 body {
