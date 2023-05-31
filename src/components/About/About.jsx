@@ -4,32 +4,39 @@ import { GoogleDocs } from 'iconoir-react';
 import { GitHub } from 'iconoir-react';
 
 export default function About() {
+  const handleButtonClick = (link) => {
+    window.open(link, '_blank');
+  };
   return (
     <div id='about' className={styles.aboutMain}>
       <h1 className={styles.title}>Sebastián Olaya Escobar</h1>
       <section className={styles.aboutContainer}>
         <div className={styles.about}>
           <p>
-          Soy un apasionado desarrollador web enfocado en crear sitios web atractivos y funcionales. Combino habilidades técnicas y creatividad para transformar ideas en código funcional. Valorando la comunicación efectiva y el trabajo en equipo, colaboro para lograr proyectos exitosos. ¡Estoy listo para ayudarte a alcanzar tus objetivos en línea! 🇨🇴
+            Soy un apasionado desarrollador web enfocado en crear sitios web
+            atractivos y funcionales. Combino habilidades técnicas y creatividad
+            para transformar ideas en código funcional. Valorando la
+            comunicación efectiva y el trabajo en equipo, colaboro para lograr
+            proyectos exitosos. ¡Estoy listo para ayudarte a alcanzar tus
+            objetivos en línea! 🇨🇴
           </p>
-
           <div className={styles.buttons}>
             <button id={styles.cv}>
               <span className={styles.button_top}>
                 Ver Curriculum
-                <GoogleDocs height={20} width={20} strokeWidth={1.5}/>
+                <GoogleDocs height={20} width={20} strokeWidth={1.5} />
               </span>
             </button>
-            <button id={styles.linkedin}>
+            <button id={styles.linkedin} onClick={() => handleButtonClick('https://www.linkedin.com/in/solayae/')}>
               <span className={styles.button_top}>
                 LinkedIn
-                <LinkedIn height={20} width={20} strokeWidth={1.5}/>
+                <LinkedIn height={20} width={20} strokeWidth={1.5} />
               </span>
             </button>
-            <button id={styles.github}>
+            <button id={styles.github} onClick={() => handleButtonClick('https://www.github.com/solayae')}>
               <span className={styles.button_top}>
                 GitHub
-                <GitHub height={20} width={20} strokeWidth={1.5}/>
+                <GitHub height={20} width={20} strokeWidth={1.5} />
               </span>
             </button>
           </div>

@@ -1,9 +1,7 @@
-import React from 'react';
-import PropTypes from 'prop-types';
 import styles from './Skills.module.css';
 import skills from './skills';
 
-function Skills(props) {
+function Skills() {
   return (
     <div id='skills'>
       <h2>Mis Habilidades</h2>

@@ -1,8 +1,10 @@
-import React from 'react';
-import PropTypes from 'prop-types';
 import styles from './Contact.module.css';
 
-function Contact(props) {
+
+function Contact() {
+
+
+
   return (
     <section id='contact' className={styles.contact}>
       <h2>Contacto</h2>

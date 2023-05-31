@@ -1,38 +1,23 @@
 import styles from './OngoingProjects.module.css';
+import projects from './projects';
 
 function OngoingProjects() {
   return (
-      <section>
-        <h2>Proyectos en los que estoy trabajando</h2>
-        <div className={styles.projectsContainer}>
-          <div className={styles.projectCard}>
-            <h3>Nombre del Proyecto</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Inventore, cum necessitatibus? Molestiae facilis quasi harum.
-            </p>
-            <div className={styles.technologies}>
-              <span>React</span>
-              <span>React</span>
-              <span>React</span>
-              <span>React</span>
+    <section>
+      <h2>Proyectos en los que estoy trabajando</h2>
+      <div className={styles.projectsContainer}>
+        {projects.data.map((e) => (
+          <div key={e.name} className={styles.projectCard}>
+              <h3>{e.name}</h3>
+              <div className={styles.technologies}>
+                {e.technologies.map((technology) => (
+                  <span key={technology}>{technology}</span>
+                ))}
             </div>
           </div>
-          <div className={styles.projectCard}>
-            <h3>Nombre del Proyecto</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Inventore, cum necessitatibus? Molestiae facilis quasi harum.
-            </p>
-            <div className={styles.technologies}>
-              <span>React</span>
-              <span>React</span>
-              <span>React</span>
-              <span>React</span>
-            </div>
-          </div>
-        </div>
-      </section>
+        ))}
+      </div>
+    </section>
   );
 }
 
