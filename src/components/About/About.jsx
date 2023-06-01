@@ -21,7 +21,7 @@ export default function About() {
             objetivos en línea! 🇨🇴
           </p>
           <div className={styles.buttons}>
-            <button id={styles.cv}>
+            <button id={styles.cv} onClick={() => handleButtonClick('https://drive.google.com/file/d/1rS_9JtGUDFjsjAmzjM6vuG2vagdayuwI/view')}>
               <span className={styles.button_top}>
                 Ver Curriculum
                 <GoogleDocs height={20} width={20} strokeWidth={1.5} />
