@@ -1,12 +1,25 @@
 import styles from './MyProjects.module.css';
 import projects from './projects';
 import { GitHub, OpenNewWindow } from 'iconoir-react';
-import Tooltip from '@mui/material/Tooltip';
+import Tooltip, { tooltipClasses } from '@mui/material/Tooltip';
+import { styled } from '@mui/material/styles';
 
 function MyProjects() {
   const handleButtonClick = (link) => {
     window.open(link, '_blank');
   };
+
+  const LightTooltip = styled(({ className, ...props }) => (
+    <Tooltip {...props} classes={{ popper: className }} />
+  ))(({ theme }) => ({
+    [`& .${tooltipClasses.tooltip}`]: {
+      // backgroundColor: theme.palette.common.white,
+      // color: 'rgba(0, 0, 0, 0.87)',
+      boxShadow: theme.shadows[1],
+      fontSize: 11,
+      fontFamily: 'inherit',
+    },
+  }));
 
   return (
     <div id='projects' className={styles.projects}>
@@ -28,16 +41,16 @@ function MyProjects() {
               ))}
             </div>
             <div className={styles.projectsLinks}>
-              <Tooltip title='Repositorio' placement='left'>
+              <LightTooltip title='Repositorio' placement='left'>
                 <button onClick={() => handleButtonClick(`${e.repo}`)}>
                   <GitHub height={23} width={23} strokeWidth={1.5} />
                 </button>
-              </Tooltip>
-              <Tooltip title='Demo' placement='right'>
+              </LightTooltip>
+              <LightTooltip title='Demo' placement='right'>
                 <button onClick={() => handleButtonClick(`${e.deploy}`)}>
                   <OpenNewWindow height={23} width={23} strokeWidth={1.5} />
                 </button>
-              </Tooltip>
+              </LightTooltip>
             </div>
           </div>
         ))}
