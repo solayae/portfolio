@@ -6,11 +6,11 @@ function OngoingProjects() {
     <section>
       <h2>Proyectos en los que estoy trabajando</h2>
       <div className={styles.projectsContainer}>
-        {projects.data.map((e) => (
+        {projects.data?.map((e) => (
           <div key={e.name} className={styles.projectCard}>
               <h3>{e.name}</h3>
               <div className={styles.technologies}>
-                {e.technologies.map((technology) => (
+                {e.technologies?.map((technology) => (
                   <span key={technology}>{technology}</span>
                 ))}
             </div>

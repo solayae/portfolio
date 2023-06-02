@@ -4,9 +4,11 @@ import { GoogleDocs } from 'iconoir-react';
 import { GitHub } from 'iconoir-react';
 
 export default function About() {
+
   const handleButtonClick = (link) => {
     window.open(link, '_blank');
   };
+  
   return (
     <div id='about' className={styles.aboutMain}>
       <h1 className={styles.title}>Sebastián Olaya Escobar</h1>
@@ -21,19 +23,36 @@ export default function About() {
             objetivos en línea! 🇨🇴
           </p>
           <div className={styles.buttons}>
-            <button id={styles.cv} onClick={() => handleButtonClick('https://drive.google.com/file/d/1rS_9JtGUDFjsjAmzjM6vuG2vagdayuwI/view')}>
+            <button
+              id={styles.cv}
+              onClick={() =>
+                handleButtonClick(
+                  'https://drive.google.com/file/d/1rS_9JtGUDFjsjAmzjM6vuG2vagdayuwI/view'
+                )
+              }
+            >
               <span className={styles.button_top}>
                 Ver Curriculum
                 <GoogleDocs height={20} width={20} strokeWidth={1.5} />
               </span>
             </button>
-            <button id={styles.linkedin} onClick={() => handleButtonClick('https://www.linkedin.com/in/solayae/')}>
+            <button
+              id={styles.linkedin}
+              onClick={() =>
+                handleButtonClick('https://www.linkedin.com/in/solayae/')
+              }
+            >
               <span className={styles.button_top}>
                 LinkedIn
                 <LinkedIn height={20} width={20} strokeWidth={1.5} />
               </span>
             </button>
-            <button id={styles.github} onClick={() => handleButtonClick('https://www.github.com/solayae')}>
+            <button
+              id={styles.github}
+              onClick={() =>
+                handleButtonClick('https://www.github.com/solayae')
+              }
+            >
               <span className={styles.button_top}>
                 GitHub
                 <GitHub height={20} width={20} strokeWidth={1.5} />
